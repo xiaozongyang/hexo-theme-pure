@@ -1,12 +1,13 @@
+# see https://github.com/cofess/hexo-theme-pure
+#
+# setup instructions
+#   1. git clone https://github.com/cofess/hexo-theme-pure.git themes/pure
+#   2. ln -sf backup/pure_config.yml themes/pure/_config.yml
 # menu
 menu:
   Home: .
   Archives: archives  # 归档
-  Categories: categories  # 分类
-  Tags: tags  # 标签
   Repository: repository  # github repositories
-  Books: books  # 豆瓣书单
-  Links: links  # 友链
   About: about  # 关于
 
 # Enable/Disable menu icons
@@ -22,7 +23,7 @@ menu_icons:
   about: icon-cup-fill
 
 # rss
-rss: /atom.xml
+# rss: /atom.xml
 
 # Site
 site:
@@ -31,7 +32,7 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: XiaoZongyang's Blog # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
   copyright: false # 底部版权信息
@@ -41,13 +42,13 @@ config:
   skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
-  menu_highlight: false # 是否开启当前菜单高亮显示
+  menu_highlight: true # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
 # Pagination
 pagination:
-  number: false
+  number: true
   prev: 
     alwayShow: true
   next:
@@ -56,7 +57,7 @@ pagination:
 # Sidebar
 sidebar: right
 widgets:
-  - board  
+  - board
   - category
   - tag
   - tagcloud
@@ -102,7 +103,7 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: xiaozongyang # github username
 
 # Comment
 # Gitment
@@ -152,17 +153,15 @@ douban:
   user: # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
-  apikey: # 豆瓣apikey
-  
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true # 不蒜子统计
   leancloud:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
     app_key: # leancloud <AppKey>
-        
+
 # wordcount
 postCount:
   enable: false
@@ -176,62 +175,40 @@ plugins:
   baidu_analytics: # enter Baidu Analytics hash key
   tencent_analytics: 
   
-# Miscellaneous
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:  
-  
 # profile
 profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
-  author_title: Web Developer & Designer
-  author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  author: 肖宗阳
+  author_title: Inf Developer
+  author_description: 基础架构工程师，专注可见性领域。
+  location: Beijig, China
+  follow: https://github.com/xiaozongyang
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
-      # facebook: /
-      # dribbble: /
-      behance: https://www.behance.net/cofess
-      rss: atom.xml
+      github: https://github.com/xiaozongyang
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
     Git: ★★★☆☆
-    Gulp: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
+    Prometheus: ★★★☆☆
+    Thanos: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/xiaozongyang
   # My Personal Labels
   labels:
-    - 前端
-    - 前端开发
-    - 前端重构
-    - Web前端
-    - 网页重构
+    - 基础架构
+    - 监控
+    - Java
   # My Personal Works
   works:
     name:
-      link: http://www.example.com
-      date: 2016
+      link: https://www.yuanfudao.com/
+      date: 2019
   # My Personal Projects
   projects:
-    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+    xiaozongyang/daily-reading: https://github.com/xiaozongyang/daily-reading
+    xiaozongyang/arts: https://github.com/xiaozongyang/arts
