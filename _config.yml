@@ -109,20 +109,17 @@ github:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: gitalk
-  gitment:
-    githubID: xiaozongyang
-    repo: xiaozongyang.github.io
-    ClientID: 879c102c627b5b7c47f3
-    ClientSecret: c0720a1d3d346e2d40bc52075a4a8eea65c1280b
-    lazy: false
-  gitalk: # gitalk. https://gitalk.github.io/
-    owner: xiaozongyang #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin: xiaozongyang #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo: xiaozongyang.github.io
-    proxy: https://thingproxy.freeboard.io/fetch/https://github.com/login/oauth/access_token
-    ClientID: 879c102c627b5b7c47f3
-    ClientSecret: c0720a1d3d346e2d40bc52075a4a8eea65c1280b
+  type: valine
+  valine:
+    appid: pqPNKCepVUMmvUn3bs2eFBRQ-gzGzoHsz
+    appkey: CPIqM0YktX8yI835XkAUtTh6
+    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+    verify: false # Verification code
+    placeholder: Just go go # comment box placeholder
+    avatar: mm # gravatar style
+    meta: nick,mail,link # custom comment header
+    pageSize: 10 # pagination size
+    visitor: false # Article reading statistic https://valine.js.org/visitor.html
 
 # douban 豆瓣书单
 # Api：
